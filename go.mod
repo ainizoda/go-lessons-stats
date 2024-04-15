@@ -1,4 +1,4 @@
-module github.com/ainizoda/go-lessons/v2
+module github.com/ainizoda/go-lessons/v3
 
 go 1.22.0
 

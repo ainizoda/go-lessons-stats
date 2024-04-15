@@ -1,7 +1,7 @@
 package main
 
 import (
-	dv "github.com/ainizoda/go-lessons/devices"
+	dv "github.com/ainizoda/go-lessons/v3/devices"
 )
 
 func main() {
