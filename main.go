@@ -1,7 +1,7 @@
 package main
 
 import (
-	dv "alif/devices"
+	dv "github.com/ainizoda/go-lessons/devices"
 )
 
 func main() {
