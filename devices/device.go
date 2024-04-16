@@ -1,4 +1,4 @@
-package devices
+package goLessons
 
 type Cpu struct {
 	Prod string
