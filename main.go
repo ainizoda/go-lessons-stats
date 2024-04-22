@@ -1,16 +1,23 @@
 package main
 
 import (
-	dv "github.com/ainizoda/goLessons/v3/devices"
+	"fmt"
+	"wallet/pkg/bank/card"
+	"wallet/pkg/bank/types"
 )
 
 func main() {
-	pc := dv.Pc{
-		Cpu: dv.Cpu{
-			Core: 1,
-			Prod: "intel",
-		},
+	visa := types.Card{
+		ID:         1,
+		PAN:        "5058333399994884",
+		Balance:    9999,
+		Currency:   types.TJS,
+		Active:     true,
+		Color:      "white",
+		Name:       "Infinity",
+		MinBalance: 3,
 	}
-
-	pc.On()
+	fmt.Println(visa.Balance)
+	card.Withdraw(&visa, 1999)
+	fmt.Println(visa.Balance)
 }
