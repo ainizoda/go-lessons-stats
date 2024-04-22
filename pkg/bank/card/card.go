@@ -57,3 +57,17 @@ func AddBonus(card *types.Card, percent int, daysInMonth int, daysInYear int) {
 	bonus := float64(card.MinBalance) * (float64(percent) / 100) * (float64(daysInMonth) / float64(daysInYear))
 	card.Balance += types.Money(min(5000, bonus))
 }
+
+func PaymentSources(cards []types.Card) []types.PaymentSource {
+	var sources []types.PaymentSource
+	for _, card := range cards {
+		if card.Active && card.Balance > 0 {
+			sources = append(sources, types.PaymentSource{
+				Type:    "card",
+				Number:  string(card.PAN),
+				Balance: card.Balance,
+			})
+		}
+	}
+	return sources
+}
