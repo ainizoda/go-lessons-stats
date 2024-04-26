@@ -2,7 +2,7 @@ package types
 
 type Money int64
 
-// type PaymentCategory string
+type PaymentCategory string
 
 // type PaymentStatus string
 
@@ -13,9 +13,9 @@ type Money int64
 // )
 
 type Payment struct {
-	ID     int
-	Amount Money
-	// Category PaymentCategory
+	ID       int
+	Amount   Money
+	Category PaymentCategory
 	// Status   PaymentStatus
 }
 

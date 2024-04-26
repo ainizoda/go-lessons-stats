@@ -1,6 +1,6 @@
 package transfer
 
-import "bank/pkg/bank/types"
+import "github.com/ainizoda/goLessons/pkg/bank/types"
 
 const bonusPercent = 0.0050
 

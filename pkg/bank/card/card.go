@@ -1,6 +1,6 @@
 package card
 
-import "bank/pkg/bank/types"
+import "github.com/ainizoda/goLessons/pkg/bank/types"
 
 const withdrawalLimit = 200_000
 const depositLimit = 50_000

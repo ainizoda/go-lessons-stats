@@ -1,9 +1,10 @@
 package main
 
 import (
-	"bank/pkg/bank/card"
-	"bank/pkg/bank/types"
 	"fmt"
+
+	"github.com/ainizoda/goLessons/pkg/bank/card"
+	"github.com/ainizoda/goLessons/pkg/bank/types"
 )
 
 func main() {

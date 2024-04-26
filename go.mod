@@ -1,4 +1,4 @@
-module bank
+module github.com/ainizoda/goLessons
 
 go 1.22.0
 
