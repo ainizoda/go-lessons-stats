@@ -5,7 +5,7 @@ import "bank/pkg/bank/types"
 const withdrawalLimit = 200_000
 const depositLimit = 50_000
 
-func IssueCard(currency types.Currency, color string, name string) types.Card {
+func Issue(currency types.Currency, color, name string) types.Card {
 	card := types.Card{
 		ID:       1000,
 		PAN:      "505800011110202",
@@ -34,7 +34,7 @@ func Withdraw(card *types.Card, amount types.Money) {
 	card.Balance -= amount
 }
 
-func Deposit(card types.Card, amount types.Money) {
+func Deposit(card *types.Card, amount types.Money) {
 	if amount <= 0 {
 		return
 	}
@@ -47,7 +47,7 @@ func Deposit(card types.Card, amount types.Money) {
 	card.Balance += amount
 }
 
-func AddBonus(card *types.Card, percent int, daysInMonth int, daysInYear int) {
+func AddBonus(card *types.Card, percent, daysInMonth, daysInYear int) {
 	if !card.Active {
 		return
 	}
