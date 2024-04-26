@@ -1,4 +1,4 @@
-module github.com/ainizoda/goLessons
+module github.com/ainizoda/go-lessons-stats
 
 go 1.22.0
 
