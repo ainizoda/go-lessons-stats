@@ -1,6 +1,6 @@
 package stats
 
-import "github.com/ainizoda/goLessons/pkg/bank/types"
+import "github.com/ainizoda/go-lessons-types/v2/pkg/bank/types"
 
 func Avg(payments []types.Payment) types.Money {
 	var sum types.Money
